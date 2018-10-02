@@ -9,13 +9,18 @@ Useful resources
 [4](http://anakiou.blogspot.ch/2015/08/multi-tenant-application-with-spring.html)
 
 ## Running the demo
-You need to add a table orders in database (PostgreSQL in this case but ofcourse you can choose anyone)
+You need to add a table orders in database (PostgreSQL in this case but of course you can choose anyone)
 
 ```
 CREATE TABLE "orders" (
 "id" int4 NOT NULL,
 "date" date NOT NULL
 );
+```
+
+## Create DB ID Sequence
+```
+CREATE SEQUENCE hibernate_sequence START 1;
 ```
 
 ### Available URLs
